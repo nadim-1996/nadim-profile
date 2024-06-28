@@ -1,0 +1,55 @@
+.contact {
+    animation: shakePhone 1.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+    transform-origin: center;
+}
+
+@keyframes shakePhone {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: rotate(-5deg);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: rotate(5deg);
+    }
+}
+
+.mail {
+    animation: floatEnvelope 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatEnvelope {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.resume {
+    animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY('30')(15deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
