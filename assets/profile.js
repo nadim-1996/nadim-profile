@@ -20,6 +20,8 @@ function copyContactNumber() {
     alert("Contact number copied: " + contactNumber);
 }
 
+document.body.classList.add('dark');
+
 function toggleDarkMode() {
     document.body.classList.toggle('dark');
 }
